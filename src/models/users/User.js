@@ -1,15 +1,15 @@
-class Carros {
-  constructor(id, modeloVeiculo, quilometragem, status, problemasReportados) {
+class Jogadores {
+  constructor(id, nome, equipe, impostor) {
     this.id = this.generateId();
-    this.modeloVeiculo = modeloVeiculo;
-    this.quilometragem = quilometragem;
-    this.status = status;
-    this.problemasReportados = problemasReportados
+    this.nome = nome;
+    this.equipe = equipe;
+    this.impostor = impostor;
   }
+
 
   generateId(){
     return Math.floor(Math.random() * 999) + 1;
   }
 }
 
-export default Carros;
+export default Jogadores;
